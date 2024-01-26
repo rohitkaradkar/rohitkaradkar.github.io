@@ -1,0 +1,17 @@
+baseURL = 'https://rohit.karadkar.com'
+languageCode = 'en-us'
+title = 'Rohit Karadkar'
+theme = 'henry'
+[params]
+    ExternalLinkIndicator = "»"
+
+[outputs]
+    page = ["HTML"]
+    home = ["HTML", "RSS", "JSON"]
+    section = ["HTML","RSS"]
+    taxonomy = ["HTML","RSS"]
+
+[outputFormats]
+[outputFormats.RSS]
+    mediatype = "application/rss"
+    baseName = "feed"
