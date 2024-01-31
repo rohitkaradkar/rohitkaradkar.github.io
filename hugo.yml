@@ -17,7 +17,7 @@ params:
   disableThemeToggle: true
   homeInfoParams:
     Title: Hello, I'm Rohit 👋
-    Content: A cyclist who builds Mobile apps for living. Using this space to practice writing and document my learnings. Currenly working at Thoughtworks.
+    Content: A cyclist who builds Mobile apps for a living. Using this space to practice writing and document my learnings. Currently working at Thoughtworks.
   socialIcons:
     - name: "linkedin"
       url: "https://www.linkedin.com/in/rohit-karadkar"
