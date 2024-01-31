@@ -3,6 +3,15 @@ languageCode: en-us
 title: Rohit Karadkar
 theme: papermod
 
+menu:
+  main:
+    - name: Archive
+      url: archives
+      weight: 5
+    - name: Tags
+      url: tags/
+      weight: 10
+
 params:
   defaultTheme: dark
   disableThemeToggle: true
