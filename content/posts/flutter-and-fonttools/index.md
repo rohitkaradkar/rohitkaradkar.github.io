@@ -1,10 +1,9 @@
 ---
-draft: false
-date: 2023-12-24
-title: Flutter, Fonttools, and Helvetica Neue
-slug: flutter-and-fonttools
+title: "Flutter, Fonttools, and Helvetica Neue"
+draft: true
+date: 2024-01-31
 summary: How integrating a simple font in Flutter, led to the discovery of interesting things
-tags: [scripts, flutter, fonts, typography]
+tags: [flutter, typography, python]
 categories: [flutter]
 ---
 
@@ -12,12 +11,11 @@ categories: [flutter]
 I was working on a Flutter project where I had to use the Helvetica Neue font, but as it's a proprietary font, an asset for it wasn't available freely on the internet. 
 
 Then I remembered that MacOS has a "Font Book" app that lets you browse, manage, and import/export Fonts on your Mac.
-
-{{< img src="./images/font-book-export.png"
-        align="center"
-        alt="Exporting font from Font Book app"
-        caption="Exporting font from Font Book app"
->}}
+{{< figure 
+  src="./images/font-book-export.png" 
+  align="center"
+  alt="Exporting font from Font Book app"
+  caption="Exporting font from Font Book app">}}
 
 ## Splitting the TrueType Collection (TTC) font file by its style
 The `.ttc` font file contained all 14 styles of Helvetica Neue, which I didn't need and would contribute to the app size. 
@@ -130,12 +128,12 @@ flutter:
         - asset: fonts/HelveticaNeue-CondensedBold.ttf
           weight: 800
 ```
-{{<img src="./images/false-weights.png"
+
+{{< figure src="./images/false-weights.png"
       align="center"
       alt="Bold and CondensedBold font looks the same"
       caption="Bold and CondensedBold font looks the same"
-      width="360"
-  >}}
+      width="360">}}
 
 ## Realising font weight doesn't work in Flutter
 Even though I have applied and used separate weights for the `Bold` and `CondensedBold` fonts, they look the same. After pulling some hairs and digging through Flutter GitHub issues, I found out that, for given `fontFamily` and `fontWeight`, the Flutter engine selects the font asset based on its font metadata, ignoring the `weight` and `style` properties declared in `pubspec.yaml`. Refer Issue [#3591](https://github.com/flutter/website/issues/3591#issuecomment-521806077).
@@ -185,7 +183,7 @@ flutter:
       fonts:
         - asset: fonts/HelveticaNeue-CondensedBold.ttf
 ```
-{{<img src="./images/final.png"
+{{< figure src="./images/final.png"
       align="center"
       alt="When CondensedBold is used as a separate font family"
       caption="When CondensedBold is used as a separate font family"

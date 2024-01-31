@@ -1,0 +1,33 @@
+baseURL: 'https://rohit.karadkar.com'
+languageCode: en-us
+title: Rohit Karadkar
+theme: papermod
+
+menu:
+  main:
+    - name: Archive
+      url: archives
+      weight: 5
+    - name: Tags
+      url: tags/
+      weight: 10
+
+params:
+  defaultTheme: dark
+  disableThemeToggle: true
+  homeInfoParams:
+    Title: Hello, I'm Rohit 👋
+    Content: A cyclist who builds Mobile apps for living. Using this space to practice writing and document my learnings. Currenly working at Thoughtworks.
+  socialIcons:
+    - name: "linkedin"
+      url: "https://www.linkedin.com/in/rohit-karadkar"
+    - name: "github"
+      url: "https://www.github.com/rohitkaradkar"
+    - name: "twitter"
+      url: "https://www.twitter.com/rohitkaradkar_"
+    - name: "email"
+      url: "mailto:karadkar.rohit@gmail.com"
+  ShowReadingTime: true
+  ShowToc: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
