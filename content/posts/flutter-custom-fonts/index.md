@@ -3,7 +3,7 @@ title: 'Flutter custom fonts: Tips, Tricks, and Workarounds'
 draft: false
 date: 2024-01-31
 summary: How integrating a simple font in Flutter led to the discovery of interesting things
-tags: [flutter, typography, python]
+tags: [flutter, typography, fonttools, python]
 categories: [flutter]
 ---
 
