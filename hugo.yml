@@ -21,8 +21,13 @@ params:
   disableThemeToggle: true
   homeInfoParams:
     imageUrl: "https://avatars.githubusercontent.com/u/8667140"
-    Title: Hello, I'm Rohit 👋
-    Content: A cyclist who builds Mobile apps for a living. Using this space to practice writing and document my learnings. Currently working at Thoughtworks.
+    Title: Hello, I'm Rohit
+    Content: >
+      A Fitness enthusiast who loves to build mobile apps and tools. 
+      
+      - I'm using this space to practice writing while documenting my learnings. 
+      
+      - Currently working as Senior Consultant at Thoughtworks. 
   socialIcons:
     - name: "linkedin"
       url: "https://www.linkedin.com/in/rohit-karadkar"
