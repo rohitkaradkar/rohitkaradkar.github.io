@@ -12,6 +12,10 @@ menu:
       url: tags/
       weight: 10
 
+services:
+  googleAnalytics:
+    ID:  G-PB3NQBVN8K
+
 params:
   defaultTheme: dark
   disableThemeToggle: true
