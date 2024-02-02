@@ -5,6 +5,10 @@ date: 2024-01-31
 summary: How integrating a simple font in Flutter led to the discovery of interesting things
 tags: [flutter, typography, fonttools, python]
 categories: [flutter]
+cover:
+  image: 'images/banner.png'
+  relative: true
+  alt: 'Splitting font file by its style using fonttools library'
 ---
 
 I was working on a Flutter project where I had to use the Helvetica Neue font, but as it's a proprietary font, the asset for it wasn't available freely on the internet.
